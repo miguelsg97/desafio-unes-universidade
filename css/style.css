@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    color: #35363d;
+}
+
+p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* header/nav   */
+
+header {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 27.5px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-right: 15px;
+    gap: 60px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #39405e;
+    text-decoration-color: transparent;
+    transition: text-decoration-color .075s ease-in-out;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 4px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #3ec6b5;
+    text-decoration-thickness: 4px;
+}
+
+.pagina-atual {
+    color: #727dab;
+}
+
+/* banner */
+
+.banner-section {
+    background-image: url("../imagens/fundo.png");
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    color: white;
+}
+
+.banner-section h1 {
+    font-size: 67px;
+    font-weight: bolder;
+    margin: 20px 0px 20px;
+    letter-spacing: 2px;
+}
+
+.banner-section span {
+    color: #3ec6b5;
+    font-weight: 550;
+}
+
+.banner-section p {
+    margin: 0px 0px 30px 0px;
+}
+
+.banner-section a {
+    text-decoration: none;
+    color: #424968;
+}
+
+.banner-section-button {
+    display: inline-block;
+    color: #424968;
+    font-size: 20px;
+    padding: 18px 40px 18px 40px;
+    background-color: #3ec6b5;
+    border-radius: 30px;
+    font-weight: 550;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.banner-section-button:hover {
+    transform: scale(1.025);
+}
+
+.banner-interno {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+/* títulos e sections */
+
+section {
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 80px;
+    padding-right: 200px;
+    font-size: 21px;
+}
+
+.sobre-a-universidade {
+    background-color: #f5f6fa;
+    margin: 0 auto;
+    padding: 80px 340px 30px 340px;
+}
+
+main img {
+    display: block;
+    width: 100%;
+    height: 720px;
+    object-fit: cover;
+}
+
+.h2-titulo {
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.h2-titulo::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 6px;
+    background-color: #3ec6b5;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+/* cards */
+
+.caixas {
+    display: flex;
+    justify-content: center;
+}
+
+.caixa {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    width: 350px;
+}
+
+.quadrado {
+    width: 47px;
+    height: 47px;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #687eae, #3ec6b5);
+    margin-bottom: 15px;
+}
+
+.competencias {
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 150px;
+}
+
+/* formulário contato */
+
+#form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    font-weight: bold;
+}
+
+.contato-grid {
+    display: flex;
+    align-items: flex-start;
+}
+
+.form-coluna, .canais-coluna {
+    flex: 1;
+}
+
+.lista-canais {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    gap: 25px;
+}
+
+.lista-canais li {
+    display: flex;
+    align-items: center;
+}
+
+.icone-canal {
+    width: 62.5px;
+    height: 62.5px;
+    min-width: 62.5px;
+    border-radius: 50%;
+    background-color: #aeb6d8;
+}
+
+input, textarea {
+    border: 1px solid #b1b6c9;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 15px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #8e93a8;
+}
+
+#form-button {
+    width: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.lista-canais h3, .lista-canais p {
+    margin: 10px;
+}
+
+.p-canais {
+    margin-left: 10px;
+}
+
+/* quemsomos.html */
+
+#objetivos {
+    padding-top: 10px;
+    font-size: 21px;
+}
+
+.motivos {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.motivos-row {
+    display: flex;
+    width: 1230px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cima {
+    gap: 0;
+}
+
+.baixo {
+    gap: 0;
+}
+
+.cima .caixa {
+    flex: 1;
+}
+
+.baixo .caixa {
+    flex: 1;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+
+.copyright {
+    color: #777b8d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
